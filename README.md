@@ -15,4 +15,18 @@ Thank you very much for your support, work and kind words.
 With love,
 Ania
 
+
+
+
+
+TASK 2: Selectors
+
+password_hyperlink_xpath
+
+//*[@id="__next"]/form/div/div[2]/div
+//*[@id="__next"]/form/div/div[2]/button/span[1]
+//*[@id="__next"]/form/div/div[1]/a
+
+
+
  
