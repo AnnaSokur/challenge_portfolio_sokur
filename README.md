@@ -29,13 +29,20 @@ Ania
 
 TASK 2: Selectors
 
-password_hyperlink_xpath
+    login_field_xpath
+    // *[ @ id = "login"]
+    // *[contains(text(), ‘Login’ )]
+    // child::div / a
 
-//*[@id="__next"]/form/div/div[2]/div
+    password_field_xpath
+    // *[ @ id ="password"]
+    // *[contains(text(), ‘Password’ )]
+    // child::div / a
 
-//*[@id="__next"]/form/div/div[2]/button/span[1]
-
-//*[@id="__next"]/form/div/div[1]/a
+    sign_in_bottom_xpath
+    // *[ @ id = "__next"] / form / div / div[2] / button / span[1]
+    // *[text() = "Sign in"]
+    // child::div / a
 
 
 
