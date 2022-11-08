@@ -1,10 +1,21 @@
-# from pages.base_page import BasePage
-#
-#
-# class LoginPage(BasePage):
-#     login_field_xpath = "//*[@id='login']"
-#     password_field_xpath =
-#     sign_in_button_xpath =
-#
-#     def type_in_email(self, email):
-#         self.field_send_keys(self.login_field_xpath, email)
+from pages.base_page import BasePage
+
+
+class LoginPage(BasePage):
+    login_field_xpath
+    // *[ @ id = "login"]
+    // *[contains(text(), ‘Login’ )]
+    // child::div / a
+
+    password_field_xpath
+    // *[ @ id =«password»]
+    // *[contains(text(), ‘Password’ )]
+    // child::div / a
+
+    sign_in_hyperlink_xpath
+    // *[ @ id = "__next"] / form / div / div[2] / button / span[1]
+    // *[text() =«S»ibn in]
+    // child::div / a
+
+    def type_in_email(self, email):
+        self.field_send_keys(self.login_field_xpath, email)
